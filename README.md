@@ -1,16 +1,92 @@
-# React + Vite
+# React Learning Journey 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my hands-on learning and practice with **modern React**.  
+I am building projects step by step while strengthening my fundamentals in JavaScript and React.
 
-Currently, two official plugins are available:
+The focus of this repository is **learning by building**, not copy-paste tutorials.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Functional Components)
+- React Hooks  
+  - useState  
+  - useEffect  
+  - useContext  
+  - useReducer  
+  - useRef  
+- React Router
+- JavaScript (ES6+)
+- HTML & CSS
+- Git & GitHub
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 What I Have Implemented So Far
+
+- Component-based architecture
+- Props and state management
+- Event handling
+- Conditional rendering
+- Dynamic lists with keys
+- API fetching using `useEffect`
+- Parent ↔ Child communication
+- Global state using Context API
+- Complex state handling using `useReducer`
+- Custom Hooks (`useToggle`, `useFetch`, `useLocalStorage`)
+- Basic routing using React Router
+
+---
+
+## 📂 Projects / Features
+
+- **Todo App (useReducer)**
+  - Add, remove, toggle todos
+  - Clean reducer-based logic
+- **API Fetching Example**
+  - Data fetching with loading state
+- **Context API Demo**
+  - Global user state across components
+- **Custom Hooks Practice**
+  - Reusable logic for real-world use cases
+
+(More projects coming soon 🚧)
+
+---
+
+## 📈 Current Focus
+
+- Building real-world React projects
+- Writing clean, readable code
+- Improving component structure
+- Learning industry-level React patterns
+- Making consistent GitHub commits
+
+---
+
+## 🎯 Upcoming Plans
+
+- Advanced Todo App (edit, filter, localStorage)
+- Weather App using public API
+- Notes App with search
+- User CRUD application
+- Authentication & protected routes
+- Dashboard-style project
+
+---
+
+## 👨‍💻 About Me
+
+I am a **B.Tech CSE student** actively learning frontend development with React.  
+I believe in **consistency, fundamentals, and practical learning**.
+
+---
+
+## 🔗 Connect
+
+- GitHub: https://github.com/Abu-05/react-projects/
+
+---
+
+⭐ This repository reflects my **learning progress and consistency**.
