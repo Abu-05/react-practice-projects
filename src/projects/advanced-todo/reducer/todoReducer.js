@@ -6,6 +6,8 @@ export function todoReducer(state,action){
             return state.map(todo=>(todo.id===action.id)?{...todo,completed:!todo.completed}:todo);
         case "DELETE":
             return state.filter(todo=>todo.id!==action.id);
+        case "EDIT":
+            return state.map(todo=> todo.id===action.id?{...todo,text:action.newText}:todo);
         default:
             return state;
     }
