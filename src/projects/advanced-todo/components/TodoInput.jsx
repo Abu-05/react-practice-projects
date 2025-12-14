@@ -6,7 +6,7 @@ function TodoInput({ dispatch }) {
 
   function addTodo() {
     if (text.trim() === "") return;
-    dispatch({ type: "ADD", payload: text });
+    dispatch({ type: "ADD", playload: text });
     setText("");
   }
 

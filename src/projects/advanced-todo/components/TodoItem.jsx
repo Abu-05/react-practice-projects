@@ -1,10 +1,13 @@
 import styles from "../styles/todo.module.css";
 
 function TodoItem({ todo, dispatch }) {
+    console.log(todo);
   return (
     <li className={styles.item}>
       <span
-        className={todo.completed ? styles.completed : ""}
+        className={`${styles.text} ${
+          todo.completed ? styles.completed : ""
+        }`}
         onClick={() => dispatch({ type: "TOGGLE", id: todo.id })}
       >
         {todo.text}
