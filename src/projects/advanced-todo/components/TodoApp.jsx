@@ -1,11 +1,22 @@
-import { useReducer, useState } from "react";
+import { useReducer, useState, useEffect } from "react";
 import { todoReducer } from "../reducer/todoReducer";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
 import styles from "../styles/todo.module.css";
 
 function TodoApp() {
-  const [todos, dispatch] = useReducer(todoReducer, []);
+  const [todos, dispatch] = useReducer(
+  todoReducer,
+  [],
+  () => {
+    const saved = localStorage.getItem("todos");
+    return saved ? JSON.parse(saved) : [];
+  }
+);
+useEffect(() => {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}, [todos]);
+
   const [filter, setFilter] = useState("ALL");
 
   const filteredTodos = todos.filter(todo => {
