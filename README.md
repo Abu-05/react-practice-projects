@@ -84,6 +84,8 @@ I believe in **consistency, fundamentals, and practical learning**.
 ---
 
 ## 🔗 Connect
+- GitHub: https://github.com/Abu-05/react-projects/
+
 ## Completed Projects
 ## ✅ Advanced Todo App
 
@@ -104,8 +106,6 @@ A fully functional Todo application built with modern React patterns.
 - Derived state
 - CSS Modules
 - Clean component architecture
-
-- GitHub: https://github.com/Abu-05/react-projects/
 
 ---
 
