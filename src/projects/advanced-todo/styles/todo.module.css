@@ -1,17 +1,28 @@
+/* Page background */
+.appWrapper {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+/* Main card */
 .container {
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* Title */
 .title {
   text-align: center;
   margin-bottom: 20px;
+  color: #1f2937;
 }
 
+/* Input + add button */
 .inputBox {
   display: flex;
   gap: 10px;
@@ -20,36 +31,74 @@
 
 .inputBox input {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
   font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
-.inputBox button {
-  padding: 8px 12px;
-  cursor: pointer;
+.inputBox input:focus {
+  border-color: #2563eb;
 }
 
+/* Filter buttons */
+.filterBar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.activeFilter {
+  background: #16a34a;
+}
+
+/* Todo list */
 .list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
+/* Single todo item */
 .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.item span {
+.item:hover {
+  background: #f1f5f9;
+}
+
+/* Todo text */
+.text {
+  flex: 1;
+  color: #374151;
   cursor: pointer;
+  word-break: break-word;
 }
 
+/* Completed todo */
 .completed {
   text-decoration: line-through;
   color: gray;
 }
-.text{
-  color: #333;
+
+/* Buttons */
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background: #1e40af;
 }

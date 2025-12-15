@@ -26,6 +26,7 @@ useEffect(() => {
   });
 
   return (
+    <div className={styles.appWrapper}>
     <div className={styles.container}>
       <h2 className={styles.title}>Advanced Todo App</h2>
 
@@ -39,6 +40,7 @@ useEffect(() => {
       </div>
 
       <TodoList todos={filteredTodos} dispatch={dispatch} />
+    </div>
     </div>
   );
 }
