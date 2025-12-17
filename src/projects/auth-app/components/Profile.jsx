@@ -3,7 +3,7 @@ import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import AuthLayout from "./AuthLayout";
 
-function Dashboard() {
+function Profile() {
   const { logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -11,17 +11,13 @@ function Dashboard() {
     logout();
     navigate("/login");
   }
-  function handleProfile() {
-    navigate("/profile");
-  }
 
   return (
     <AuthLayout>
-      <h2>Dashboard</h2>
-      <button onClick={handleProfile}>Profile</button>
+      <h2>Profile</h2>
       <button onClick={handleLogout}>Logout</button>
     </AuthLayout>
   );
 }
 
-export default Dashboard;
+export default Profile;
