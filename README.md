@@ -107,6 +107,31 @@ A fully functional Todo application built with modern React patterns.
 - CSS Modules
 - Clean component architecture
 
+
+## 🔐 Authentication App
+
+A simple authentication system built using React to understand how login
+flows, protected routes, and state persistence work in real applications.
+
+### 🚀 Features
+- Login with email and password
+- Authentication state managed using React Context
+- Protected routes using React Router
+- Login state persisted using localStorage
+- Clean and minimal UI
+- Proper component structure
+
+### 🧠 What I Learned
+- How authentication works in frontend applications
+- Using Context API for global state
+- Protecting routes in React
+- Managing side effects and persistence
+- Debugging routing and rendering issues
+- Structuring React projects cleanly
+
+### 🧪 Test Credentials
+Email: admin@test.com
+Password: 1234
 ---
 
 ⭐ This repository reflects my **learning progress and consistency**.
