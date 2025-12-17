@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import AuthLayout from "./AuthLayout";
 
 function Login() {
   const { login } = useContext(AuthContext);
@@ -27,35 +28,36 @@ function Login() {
     }
   }
 
-  return (
-    <div>
-      <h2>Login</h2>
+return (
+  <AuthLayout>
+    <h2>Login</h2>
 
-      <form onSubmit={handleLogin}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+    <form onSubmit={handleLogin}>
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-        <br />
+      <br /><br />
 
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
 
-        <br />
+      <br /><br />
 
-        {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p style={{ color: "red" }}>{error}</p>}
 
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  );
+      <button type="submit">Login</button>
+    </form>
+  </AuthLayout>
+);
+
 }
 
 export default Login;

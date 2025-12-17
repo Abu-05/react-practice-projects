@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import AuthLayout from "./AuthLayout";
 
 function Dashboard() {
   const { logout } = useContext(AuthContext);
@@ -12,10 +13,10 @@ function Dashboard() {
   }
 
   return (
-    <div>
+    <AuthLayout>
       <h2>Dashboard</h2>
       <button onClick={handleLogout}>Logout</button>
-    </div>
+    </AuthLayout>
   );
 }
 
