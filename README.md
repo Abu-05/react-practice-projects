@@ -132,6 +132,29 @@ flows, protected routes, and state persistence work in real applications.
 ### 🧪 Test Credentials
 Email: admin@test.com
 Password: 1234
+
 ---
+## 🌦️ Weather App
+
+A weather application built using React and the Open-Meteo API.
+
+### Features
+- Search weather by city name
+- Real-time weather data
+- No API key required
+- Loading and error handling
+- Clean component structure
+
+### What I Learned
+- Working with public APIs
+- Handling async operations in React
+- Managing UI states (loading, error, success)
+- Splitting logic into reusable components
+
+### Tech Stack
+- React
+- JavaScript (ES6+)
+- Open-Meteo API
+
 
 ⭐ This repository reflects my **learning progress and consistency**.
